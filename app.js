@@ -1,13 +1,11 @@
-const getThreeValue = (a = 0, b = 0, c = 0) => {
-  return a + b + c;
-};
+const getThreeValue = (a = 0, b = 0, c = 0) => 
+ a + b + c;
 console.log(getThreeValue(1, 2, 'sdsdsdsd'));
 
 
 
-const alphabetWords = (...words) => {
-  return words.sort().join(' ');
-};
+const alphabetWords = (...words) => 
+words.sort().join(' ');
 console.log(alphabetWords('cccc', 'raaaa', 'bbbbb', 'aaaaa'))
 
 
