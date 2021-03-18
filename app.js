@@ -14,7 +14,6 @@ const alphabetWords = (...words) => words.sort().join(" ");
 console.log(alphabetWords("cccc", "raaaa", "bbbbb", "aaaaa"));
 
 
-
 const regardsUser = (user) => {
   if (user == undefined) {
     let valueNameOfUser = prompt("Enter your name");
