@@ -1,34 +1,37 @@
-const getThreeValue = (a = 0, b = 0, c = 0) => 
- a + b + c;
-console.log(getThreeValue(1, 2, 'sdsdsdsd'));
+const getThreeValue = function (a, b, c) {
+  if (arguments[1] === undefined) {
+    return a;
+  } else if (arguments[2] === undefined) {
+    return a + b;
+  }
+  return a + b + c;
+};
+console.log(getThreeValue(1,0,'dsds'));
 
 
 
-const alphabetWords = (...words) => 
-words.sort().join(' ');
-console.log(alphabetWords('cccc', 'raaaa', 'bbbbb', 'aaaaa'))
+const alphabetWords = (...words) => words.sort().join(" ");
+console.log(alphabetWords("cccc", "raaaa", "bbbbb", "aaaaa"));
 
 
 
 const regardsUser = (user) => {
   if (user == undefined) {
-    let valueNameOfUser = prompt('Enter your name')
-    return 'Regards, ' + valueNameOfUser
+    let valueNameOfUser = prompt("Enter your name");
+    return "Regards, " + valueNameOfUser;
   } else {
-    return 'Regards, ' + user
+    return "Regards, " + user;
   }
-}
-console.log(regardsUser('sss'))
+};
+console.log(regardsUser("sss"));
 
 
 
-const  exponentiationNumber = (firstNumber, secondNumber) => {
+const exponentiationNumber = (firstNumber, secondNumber) => {
   if (secondNumber == undefined) {
-    return firstNumber ** 2
+    return firstNumber ** 2;
   } else {
-    return firstNumber ** secondNumber
+    return firstNumber ** secondNumber;
   }
-}
-console.log(exponentiationNumber(3))
-
-
+};
+console.log(exponentiationNumber(3));
